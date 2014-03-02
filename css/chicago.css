@@ -101,36 +101,62 @@ body {
 
 }
 
+ .hide {
+   display: none; 
+ }
  
  .topMarquee {
     z-index: 1;  
     min-height: 1000px; 
     min-width: 1200px; 
     background-size: cover; 
-    background-image: url(../images/buckinghamFountainCropped.jpg); 
     background-repeat: no-repeat; 
     background-attachment: fixed; 
     clear: both; 
-    /*opacity: .9; */
     position: relative;  
  }
  
- #topMarqueeTitle {
+ .topMarqueeMainImg {
+   background-image: url(../images/buckinghamFountainCropped.jpg);  
+ }
+  
+ .topMarqueeBusinessImg {
+    background-image: url(../images/MarqueeBusiness.jpg);  
+ }
+   
+ .topMarqueeCultureImg {
+     background-image: url(../images/MarqueeCulture.jpg);  
+ }
+    
+ .topMarqueeEnvironmentImg {
+      background-image: url(../images/MarqueeEnvironment.jpg);  
+ }
+     
+ .topMarqueeHousingImg {
+      background-image: url(../images/MarqueeHousing.jpg);  
+ }
+     
+ .topMarqueeSocialImg {
+      background-image: url(../images/MarqueeSocial.jpg);  
+ }
+ 
+ .topMarqueeTitle {
     z-index: 100;
     position:absolute;    
     color:white;
     left:50px;
     top:300px;
     font: 40px 'IstokWebBold', Times, serif;
-    border-bottom: 3px solid red;
+  
   }
-#topMarqueeSubTitle {
+.topMarqueeSubTitle {
     z-index: 100;
     position:absolute;    
     color:white;
     left:50px;
     top:390px;
     font: 16px 'IstokWebRegular', Times, serif;
+  
   }  
   
  
@@ -148,9 +174,16 @@ body {
     list-style: none; 
  }
  
- 
- 
- #topMarqueeScrollMsg {
+ #topMarqueeScrollMessage {
+     z-index: 100;
+     position:absolute;    
+     text-align: center;
+     color: white;
+     width: 100%;
+     bottom: 15px;
+     font: 40px 'IstokWebBold', Times, serif;
+     transform: rotate(90deg);        /* IE  */
+     -webkit-transform:rotate(90deg); /* Opera, Chrome, and Safari */
  }
  
 #bottomSection {
