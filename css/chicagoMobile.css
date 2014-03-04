@@ -4,6 +4,9 @@
     uses reset by Eric Meyer http://meyerweb.com/eric/tools/css/reset/ 
 */
 
+
+
+/*
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,9 +28,13 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
- 
-#topSection {
-     display: hide;
+.topSection {
+  display: none;
+} 
+
+.topSectionNavDiv {
+   display: block;
 }
- 
+
+*/
  

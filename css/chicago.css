@@ -34,9 +34,7 @@ time, mark, audio, video {
   
 
 body {
-   border:0:
-   width: 100%;
-   overflow: hide; 
+   border:0;
 }
  
  
@@ -53,8 +51,11 @@ body {
 }
  
  
-#topSection {
+.topSection {
  
+}
+
+.topSectionNavDiv {
 }
 
 #topSectionNav {
@@ -62,7 +63,7 @@ body {
   text-align: center;
   position: fixed;
   width: 100%;
-  overflow: hide; 
+  overflow: hidden; 
   background: linear-gradient(255deg,black,gray,black, gray );
   border: 0;
 }
@@ -111,13 +112,13 @@ body {
     min-width: 1200px; 
     background-size: cover; 
     background-repeat: no-repeat; 
-    background-attachment: fixed; 
+   /* background-attachment: fixed;*/ 
     clear: both; 
     position: relative;  
  }
  
  .topMarqueeMainImg {
-   background-image: url(../images/buckinghamFountainCropped.jpg);  
+   background-image: url(../images/MarqueeMain.jpg);  
  }
   
  .topMarqueeBusinessImg {
@@ -139,6 +140,18 @@ body {
  .topMarqueeSocialImg {
       background-image: url(../images/MarqueeSocial.jpg);  
  }
+    
+ .topMarqueeCivicImg {
+      background-image: url(../images/MarqueeCivic.jpg);  
+ } 
+    
+ .topMarqueeEducationImg {
+      background-image: url(../images/MarqueeEducation.jpg);  
+ }  
+   
+ .topMarqueeHealthImg {
+      background-image: url(../images/MarqueeHealth.jpg);  
+ }   
  
  .topMarqueeTitle {
     z-index: 100;
@@ -147,6 +160,7 @@ body {
     left:50px;
     top:300px;
     font: 40px 'IstokWebBold', Times, serif;
+    border-bottom: 3px solid red;
   
   }
 .topMarqueeSubTitle {
@@ -155,7 +169,7 @@ body {
     color:white;
     left:50px;
     top:390px;
-    font: 16px 'IstokWebRegular', Times, serif;
+    font: 18px 'IstokWebRegular', Times, serif;
   
   }  
   
@@ -164,12 +178,27 @@ body {
     z-index: 100;
     position:absolute;    
     list-style: none; 
+    color: white;
     right:50px;
     top:300px;
-    font: 20px 'IstokWebBold', Times, serif;
+    font: 20px 'IstokWebRegular', Times, serif; 
     text-align: right;
  } 
  
+ #topMarqueeNav > ul a{ 
+    color: white;
+ }
+ 
+ 
+ .currentLink {
+     font: 22px 'IstokWebBold', Times, serif; 
+ }
+ 
+ #topMarqueeNav > ul a.currentLink:after {
+   content: " -";
+   color: red;
+}  	
+  
  #topMarqueeNav li {
     list-style: none; 
  }
@@ -186,16 +215,83 @@ body {
      -webkit-transform:rotate(90deg); /* Opera, Chrome, and Safari */
  }
  
-#bottomSection {
-  /*page-break-inside: avoid;*/
-  /*clear: both;*/
+ .bottomSectionBackground {
+      z-index: 999;   
+      min-height: 1000px;  
+       min-width: 1200px;  
+       background-size: cover;  
+       background-repeat: no-repeat;  
+       background: cadetBlue;  
+ }
  
+#bottomSection {
+   margin: 0;
+   padding: 0;
+   border: 0; 
+   clear: both; 
+   position: relative;  
+  }
+  
+  figure {
+   margin: 0;
+   padding: 0;
+  
+   /*border: 2px solid darkslategray;*/ 
+ 
+ }
+ 
+  
+
+.bottomNewsArticle {
+   margin-right: 0;
+   margin-top: 0;
+   margin-bottom: 0;
+   margin-left: 25px; 
+   padding: 0;
+   border: 0;
+   text-align: left;
+   width: 30%;
+   color: linen; 
+   overflow: hidden;
+   display: inline-block;
+   float: left;
+}
+ 
+
+.bottomNewsArticleReg {
+   margin: 0;
+   padding-top: 5px;
+   font: 18px 'IstokWebRegular', Times, serif; 
+ }
+
+.bottomNewsArticleBold {
+   margin: 0;
+   font: 18px 'IstokWebBold', Times, serif; 
+   border-bottom: 1px solid darkslategray;
+   padding-bottom: 5px;
+   padding-top: 5px;
+ 
+ }
+ 
+.bottomNewsArticleDate {
+   margin-left: 0;
+   padding-top: 10px;
+   padding-bottom: 0px;
+   border-top: 1px solid darkslategray;
+   font: 18px 'IstokWebRegular', Times, serif; 
+   height: 3px;
+   
 }
 
-#bottomNewsArticle {
-  
-   
-}  
-
+.bottomNewsArticleImg {
+   max-width: 300px;
+   max-height: 300px;
+   margin: 0;
+   padding: 0;
+    width: 100%;
+   height: 100%;  
+   text-align: left;
+   font: 18px 'IstokWebRegular', Times, serif;
+}
 
  

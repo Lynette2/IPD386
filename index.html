@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Chicago (That toddlin' town)</title>
-    <meta name="Chicago" content="Chicago website assignment using HTML5 and CSS3." />
+    <title>Sweet Home Chicago</title>
     <meta name="author" content="Lynette Halka-Peel" />
     <link href="css/chicago.css"        rel="stylesheet"  media="only screen and (min-width: 481px)"/>
     <link href="css/chicagoMobile.css" rel="stylesheet"  media="only screen and (max-width: 480px)"/>
@@ -11,8 +10,8 @@
 </head>
 <body  >
 
-   <section id="topSection"    >
-      <div>
+   <section id="topSection"  class="topSection"  >
+      <div id="topSectionNavDiv" class="topSectionNavDiv">
          <nav id= "topSectionNav">
             <ul>
                <li><a href="http://www.cityofchicago.org/city/en/about.html">About</a></li>
@@ -24,8 +23,11 @@
         </nav>
       </div>
 
+      <div id="mainContent">
+      </div>
       <div id="topMarquee"  class="topMarquee topMarqueeMainImg"  >
       </div>
+
 
       <div id="mainPage" >
 	     <h1 class="topMarqueeTitle">Welcome To Chicago</h1>
@@ -38,29 +40,45 @@
       </div>
 
       <div id="culturePage"  class="hide">
-	    <h1 class="topMarqueeTitle">Harris Theater at Millennium Park</h1>
-	    <p class="topMarqueeSubTitle">Home to over 40 diverse resident music and dance companies, and a showcase for national and international acts.</p>
+	    <h1 class="topMarqueeTitle">Chicago Symphony Orchestra</h1>
+	    <p class="topMarqueeSubTitle">CSO performs well over one hundred concerts each year at its<br> downtown home, Symphony Center and at the Ravinia Festival on Chicago&apos;s North Shore.</p>
       </div>
 
       <div id="environmentPage"  class="hide">
 	    <h1 class="topMarqueeTitle">Tweet Home Chicago</h1>
 	    <p class="topMarqueeSubTitle">The City of Chicago and Chicago Park District hosted a bird house design
-and build competition to raise awareness about birds and bird habitat.</p>
+and build competition<br> to raise awareness about birds and bird habitat.</p>
       </div>
 
 	  <div id="housingPage"  class="hide">
 	    <h1 class="topMarqueeTitle">Housing and Economic Development</h1>
-	    <p class="topMarqueeSubTitle">This department helps find affordable, for-sale and rental housing in communities citywide and provides financial assistance for housing improvements.</p>
+	    <p class="topMarqueeSubTitle">This department helps find affordable, for-sale and rental housing in communities<br> citywide and provides financial assistance for housing improvements.</p>
       </div>
 
 	  <div id="socialPage"  class="hide">
 	    <h1 class="topMarqueeTitle">Social Service Providers</h1>
-	    <p class="topMarqueeSubTitle">The City of Chicago Department of Family and Support Services offers a range of funding opportunities and technical support for social service providers who serve Chicago’s most vulnerable residents.</p>
+	    <p class="topMarqueeSubTitle">The City of Chicago Department of Family and Support Services offers a range<br> of funding opportunities and technical support for social service providers who serve Chicago&apos;s<br> most vulnerable residents.</p>
       </div>
 
-      <div id="topMarqueeNav" >
-         <nav>
+	  <div id="civicPage"  class="hide">
+	    <h1 class="topMarqueeTitle">City Year Chicago</h1>
+	    <p class="topMarqueeSubTitle">Tutors and mentors provide critically needed services to some of Chicago&apos;s most underserved youth.</p>
+      </div>
+
+	  <div id="educationPage"  class="hide">
+	    <h1 class="topMarqueeTitle">Investing in Early Education</h1>
+	    <p class="topMarqueeSubTitle">A Nobel economist has found a powerful connection between a child&apos;s early education programs<br> and his or her earnings, IQ and behavior later in life.</p>
+      </div>
+
+	  <div id="healthPage"  class="hide">
+	    <h1 class="topMarqueeTitle">A plan to keep kids healthy</h1>
+	    <p class="topMarqueeSubTitle">Dr. Rahul Khare and Dr. Michael Terry share their tips for keeping kids out of the nurse&apos;s office<br> (and in one piece) this year.</p>
+      </div>
+
+      <div id="topMarqueeNavDiv" >
+         <nav id="topMarqueeNav">
 	        <ul>
+
 		       <li><a id="business" href="#">Business</a></li>
 		       <li><a id="culture" href="#">Culture & Recreation</a></li>
 		       <li><a id="environment" href="#">Environment</a></li>
@@ -73,24 +91,95 @@ and build competition to raise awareness about birds and bird habitat.</p>
 	     </nav>
       </div>
       <div id="topMarqueeScrollMessage" >
-            &raquo;
       </div>
    </section>
 
 
-   <section id="bottomSection">
-      <div  >
+   <section id="bottomSection" class="bottomSectionBackground">
+      <article class="bottomNewsArticle">
+   	     <h4 class="bottomNewsArticleDate">3rd March 2014</h4>
+   	        <figure>
+   	  		   <img class="bottomNewsArticleImg" src="./images/caremerge.jpg"  alt="caremerge"/>
+   	  	    </figure>
+         <h3 class="bottomNewsArticleBold">
+            <a id="caremerge" href="http://www.caremerge.com/site">
+            A communication & care coordination<br> platform for senior living
+            </a>
+         </h3>
+   	     <h5 class="bottomNewsArticleReg">Caremerge is the world&apos;s first complete set of integrated mobile and web solutions, revolutionizing communication and care coordination for senior care providers.
+   	       Now your residents&apos; family members can see for themselves with caremerge&apos;s Engaged Family Solution Suite.</h5>
+	  </article>
 
-      </div>
+      <article class="bottomNewsArticle">
+   	     <h4 class="bottomNewsArticleDate">24th February 2014</h4>
+   	        <figure>
+   	  		   <img class="bottomNewsArticleImg" src="./images/conferences.jpg" alt="conferences"/>
+   	  	    </figure>
+         <h3 class="bottomNewsArticleBold">
+            <a id="conferences" href="http://www.conferences.io/">
+            Audience participation made easy,<br>  get live feedback
+            </a>
+         </h3>
+   	     <h5 class="bottomNewsArticleReg">Your audience wants to participate during your event, not just listen. We make it
+   	     easy.  Conferences.IO is a mobile web app designed to empower audiences and give presenters actionable,
+   	     real-time insight.  It is so simple, so intuitive, and provides incredible feedback. Audiences love it.
+   	     </h5>
+	  </article>
 
-      <div  >
-      </div>
+      <article class="bottomNewsArticle">
+   	     <h4 class="bottomNewsArticleDate">17th February 2014</h4>
+   	        <figure>
+   	  		   <img class="bottomNewsArticleImg" src="./images/fundology.jpg" alt="fundology"/>
+   	  	    </figure>
+         <h3 class="bottomNewsArticleBold">
+            <a id="fundology" href="http://fundology.com/">
+            Secure transaction management which brings harmony to dealmaking
+            </a>
+         </h3>
+   	     <h5 class="bottomNewsArticleReg">We build solutions to simplify transaction management so you can spend less time managing deals and more time
+   	     making them.  Quickly customize private rooms for secure data sharing and collaboration.
+   	     Manage regulatory requirements with our built-in compliance tools.</h5>
+	  </article>
+      <article class="bottomNewsArticle">
+   	     <h4 class="bottomNewsArticleDate">10th February 2014</h4>
+   	        <figure>
+   	  		   <img class="bottomNewsArticleImg" src="./images/georama.jpg" alt="georama"/>
+   	  	    </figure>
+         <h3 class="bottomNewsArticleBold">
+            <a id="georama" href="http://www.georama.com/">Discover Vacation Ideas categorized<br> by experience
+            </a>
+         </h3>
+   	     <h5 class="bottomNewsArticleReg">Former Microsoft employee Nihal Advani has been working on the idea for his
+   	     start-up, a map-based travel site called Georama, since 2010. But things really started kicking into gear
+   	      when he invited some serious manpower on board: roughly 30 new employees.  These 30 employees were the
+   	      students in DePaul University&apos;s summer Entrepreneurship Strategy class</h5>
+	  </article>
+      <article class="bottomNewsArticle">
+   	     <h4 class="bottomNewsArticleDate">3rd February 2014</h4>
+   	        <figure>
+   	  		   <img class="bottomNewsArticleImg" src="./images/lock.jpg" alt="lock"/>
+   	  	    </figure>
+         <h3 class="bottomNewsArticleBold">
+            <a id="lock" href="http://sportslock.com/">Mobile fantasy sports for everyone.<br> Challenge your friends.
+            </a>
+         </h3>
+   	     <h5 class="bottomNewsArticleReg">Daily picks of your favorite players. Make simple and fun predictions.  See how you compare and
+   	     keep score against your friends.  Up to date score and stats, so you can monitor on the go. </h5>
+	  </article>
+      <article class="bottomNewsArticle">
+   	     <h4 class="bottomNewsArticleDate">2nd February 2011</h4>
+            <video id="blizzard" width="320" height="240" controls="controls" poster="./images/lake_shore_drive_2011.jpg"   src="./videos/blizzard6pm.mov">
+            </video>
 
-      <div>
+         <h3 class="bottomNewsArticleBold">
+            <a href="http://www.chicagotribune.com/news/weather/chi-110201-monster-snowstorm-2011-pictures,0,2705665.photogallery">Chicago&apos;s beautiful winter months deliver<br> nothing short of magical experiences
+            </a>
+         </h3>
+   	     <h5 class="bottomNewsArticleReg">More than 20 inches of snow fell in some parts of the Chicago area, starting Feb. 1, 2011. Power outages, school and business closings, motorists stranded on roadways, and public transit disruptions complicated life in the city and suburbs. </h5>
+	  </article>
 
-
-      </div>
    </section>
+
    <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
    <script src="js/chicago.js"></script>
