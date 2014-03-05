@@ -1,55 +1,17 @@
 /* 
     CSS for Chicago website
   
-    uses reset by Eric Meyer http://meyerweb.com/eric/tools/css/reset/ 
 */
-
-/*html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output,  section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-} */
-
- /*   
-*  {
-   border: 1px solid red !important;
-} */  
-  
- 
-  
 
 body {
    border:0;
    margin: 0;
    padding: 0;
 }
- 
- 
 
-@font-face {
-  font-family: 'IstokWebRegular';
-  src: url('../fonts/IstokWeb-Regular-webfont.eot') format('eot'), 
-	   url('../fonts/IstokWeb-Regular-webfont.woff') format('woff'), 
-	   url('../fonts/IstokWeb-Regular-webfont.ttf') format('truetype');
-	  	   
- font-family: 'IstokWebBold';
-   src: url('../fonts/IstokWeb-Bold-webfont.ttf') format('truetype');
-	  
+html {
+  font-family: Helvetica, Arial,
+  "Luxi Sans", sans-serif;
 }
  
  
@@ -73,10 +35,8 @@ body {
 
 #topSectionNav > ul{
   list-style: none; 
-  
-  font: 20px 'IstokWebRegular', Times, serif;
+  font: 20px;
   display: inline-block; 
-
 }
    
  
@@ -88,7 +48,6 @@ body {
 #topSectionNav > ul li:nth-child(3) a {
    color: red;
 }
- 
 
 #topSectionNav > ul a{
 	 height: 25px;  
@@ -96,9 +55,8 @@ body {
 	opacity: .7;
 	text-decoration: none;
 	color: white;
-	font: bold 24px/50px Arial, Helvetica;
+	font: bold 24px;
 }
- 
 
  #topSectionNav > ul li:hover {
     border-bottom: 1px solid red;
@@ -157,44 +115,52 @@ body {
  }   
  
  .topMarqueeTitle {
+    padding: 0px;
+    margin: 0;
+    background: linear-gradient(180deg,linen,cadetblue  );
     z-index: 100;
     position:absolute;    
-    color:white;
+    color:black;
     left:50px;
     top:300px;
-    font: 40px 'IstokWebBold', Times, serif;
-    border-bottom: 3px solid red;
-  
+    font: 20px;
   }
 .topMarqueeSubTitle {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(180deg,linen,cadetblue  );
     z-index: 100;
     position:absolute;    
-    color:white;
+    color:black;
     left:50px;
     top:390px;
-    font: 18px 'IstokWebRegular', Times, serif;
-  
+    font: 18px;
   }  
   
  
 #topMarqueeNav {
+ 
+    padding-right: 15px;
+    margin: 0;
+    background: linear-gradient(180deg,linen,cadetblue  );
     z-index: 100;
     position:absolute;    
     list-style: none; 
-    color: white;
-    right:50px;
+    color: black;
+    right: 0px;
     top:300px;
-    font: 20px 'IstokWebRegular', Times, serif; 
+    font: 20px;
     text-align: right;
  } 
  
  #topMarqueeNav > ul a{ 
-    color: white;
+   width: 100%;
+    color: black;
  }
  
  
  .currentLink {
-     font: 22px 'IstokWebBold', Times, serif; 
+     font: bold 22px;
  }
  
  #topMarqueeNav > ul a.currentLink:after {
@@ -210,10 +176,11 @@ body {
      z-index: 100;
      position:absolute;    
      text-align: center;
-     color: white;
+     background: linen;
+     color: black;
      width: 100%;
      bottom: 15px;
-     font: 40px 'IstokWebBold', Times, serif;
+     font: 30px bold;
      transform: rotate(90deg);        /* IE  */
      -webkit-transform:rotate(90deg); /* Opera, Chrome, and Safari */
  }
@@ -264,16 +231,15 @@ body {
 .bottomNewsArticleReg {
    margin: 0;
    padding-top: 5px;
-   font: 18px 'IstokWebRegular', Times, serif; 
+   font: 18px;
  }
 
 .bottomNewsArticleBold {
    margin: 0;
-   font: 18px 'IstokWebBold', Times, serif; 
+   font: 18px bold;
    border-bottom: 1px solid darkslategray;
    padding-bottom: 5px;
    padding-top: 5px;
- 
  }
  
 .bottomNewsArticleDate {
@@ -281,9 +247,8 @@ body {
    padding-top: 10px;
    padding-bottom: 0px;
    border-top: 1px solid darkslategray;
-   font: 18px 'IstokWebRegular', Times, serif; 
+   font: 18px;
    height: 3px;
-   
 }
 
 .bottomNewsArticleImg {
@@ -294,7 +259,7 @@ body {
     width: 100%;
    height: 100%;  
    text-align: left;
-   font: 18px 'IstokWebRegular', Times, serif;
+   font: 18px;
 }
 
  
