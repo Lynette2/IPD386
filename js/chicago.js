@@ -136,15 +136,3 @@ function removeMarqueeNavLinkStyle() {
 
 });  //end document onReady
 
-
-//try deleting dom nodes
-window.onresize = function(event) {
-    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    if (width < 481) {
-      removeAllMarquees();
-       hideAllTitles();
-      $("#topMarquee").removeClass("topMarquee");
-      $("#topMarqueeNav").hide();
-      $("#mainContent").hide();
-    }
-};
